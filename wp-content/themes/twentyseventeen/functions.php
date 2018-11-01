@@ -17,6 +17,12 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	return;
 }
 
+// Adding style to Header
+function header_resources() {
+	wp_enqueue_style('style', get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts', 'header_resources');
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *

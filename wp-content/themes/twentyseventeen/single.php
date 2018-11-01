@@ -4,7 +4,11 @@
 		<?php include "single.css"; ?>
 	</style>
 </head>
-
+<header>
+  <?php>
+        get_header();
+   <?php>
+  </header>
 <?php
 function getPrevNext(){
 	$postlist = get_posts('sort_column=menu_order&sort_order=asc');
