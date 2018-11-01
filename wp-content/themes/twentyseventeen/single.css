@@ -1,20 +1,24 @@
+body{
+  background-color: #ffc95e;
+}
+
 .wrap {
   margin: 8%;
-  background-color: #000000;
+    background-color: #ff7c5e;
   padding: 1%;
   border-radius: 10px;
 }
 
 .title {
   border-radius: 10px;
-  background-color: #ef5450;
+  background-color: #ffa15e;
   padding: 1%;
 }
 
 .content{
   margin-top: 1%;
   border-radius: 10px;
-  background-color: #ef5450;
+  background-color: #ffa15e;
   padding: 2%;
   padding-left: 15%;
   padding-right: 15%;
@@ -23,7 +27,7 @@
 .navigation{
   margin-top: 1%;
   border-radius: 10px;
-  background-color: #ef5450;
+  background-color: #ffa15e;
   padding: 1%;
   text-align: center;
 }

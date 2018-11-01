@@ -1,5 +1,6 @@
 <head>
   <style>
+    <?php include "allfonts.css"; ?>
     <?php include "event.css"; ?>
   </style>
 </head>
