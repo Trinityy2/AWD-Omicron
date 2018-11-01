@@ -51,7 +51,7 @@ function getPrevNext(){
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();?>
 		<div class="title">
-			<h1><?= wp_title() ?></h1>
+			<h1><?= get_the_title() ?></h1>
 		</div>
 
 		<div class="content">
