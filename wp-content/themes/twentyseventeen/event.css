@@ -1,5 +1,5 @@
-header{
-
+body{
+	background-color: #ffc95e;
 }
 
 .wrap h1{
@@ -16,7 +16,7 @@ header{
 	height: auto;
 	grid-template-columns: 55% auto;
 	grid-template-rows: auto auto auto auto auto;
-	background-color: #ef5450;
+	background-color: #ff7c5e;
 }
 
 .video{
@@ -38,6 +38,17 @@ header{
 	padding-left: 2%;
 }
 
+.quickInfo p{
+	font-size: 16;
+	font-style: italic;
+}
+
+.quickInfo .title{
+	font-size: 38;
+	line-height: 0;
+	font-style: normal;
+}
+
 .restrictions{
   grid-row-start: 2;
   grid-row-end: 3;
@@ -55,6 +66,8 @@ header{
   height: 40px;
 	margin-top: 2%;
 	border-radius: 10px;
+	background-color: #5e8eff;
+	border-color: #5e8eff;
 }
 
 .description{
@@ -64,16 +77,8 @@ header{
   grid-column-end: 2;
 }
 
-.dateTime{
+.dateTimeLocation{
   grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-	padding-left: 2%;
-}
-
-.location{
-  grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -85,7 +90,7 @@ header{
   grid-template-columns: 50% 50%;
   width: auto;
   height: auto;
-  background-color: #ef5450;
+  background-color: #ff7c5e;
 	margin-top: 1%;
 	margin-left: 8%;
 	margin-right: 8%;
@@ -183,16 +188,24 @@ header{
 	height: 35vh;
 	grid-template-columns: 40% auto 10%;
 	grid-template-rows: 10% auto auto auto;
-	background-color: #ef5450;
+	background-color: #ff7c5e;
 	border-radius: 10px;
+	margin-bottom: 1%
 }
 
-.moreImage{
+.moreVideo{
 	grid-row-start: 1;
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 2;
-	background-color: #ffffff;
+	height: 300;
+	width: 100%;
+}
+
+.moreVideo iframe{
+	width: 100%;
+	height: 80%;
+	padding-bottom: 0;
 }
 
 .moreType{
@@ -200,6 +213,7 @@ header{
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
+	padding-left: 1%
 }
 
 .moreBuyNow{
@@ -207,6 +221,9 @@ header{
   grid-row-end: 2;
   grid-column-start: 3;
   grid-column-end: 4;
+	border-radius: 10px;
+	background-color: #5e8eff;
+	border-color: #5e8eff;
 }
 
 .moreTitle{
@@ -214,6 +231,7 @@ header{
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
+	padding-left: 1%
 }
 
 .moreDescription{
@@ -221,11 +239,5 @@ header{
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
-}
-
-.moreRestrictions{
-	grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 4;
+	padding-left: 1%
 }
