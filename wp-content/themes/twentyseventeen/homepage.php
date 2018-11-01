@@ -1,7 +1,7 @@
 <head>
   <style>
     <?php include "allfonts.css"; ?>
-    <?php include "event.css"; ?>
+    <?php include "homepage.css"; ?>
   </style>
 </head>
 <header>
