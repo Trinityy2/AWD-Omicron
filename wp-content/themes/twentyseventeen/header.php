@@ -27,11 +27,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
-
 	<header id="masthead" class="site-header" role="banner">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h5><?php bloginfo('description'); ?></h5>
 		<img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/hraff-logo.png'; ?>" alt="HRAFF Logo" width="80" height="80">
 		<nav class="site-nav">
                     <ul id = "menu">
