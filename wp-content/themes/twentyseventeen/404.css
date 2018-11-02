@@ -1,0 +1,22 @@
+body{
+  background-color: #ffc95e;
+}
+
+.page-content{
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.page-content a{
+  height: 100%;
+  width: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align: right;
+}
+
+.panda{
+    height: 50vh;
+    width: auto;
+}
