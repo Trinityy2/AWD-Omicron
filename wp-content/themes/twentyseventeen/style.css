@@ -61,6 +61,10 @@ html {
 body {
 	margin: 0;
 }
+/*Carousel */
+#slide1 {
+    background: url("assets/images/movie1.jpg") center no-repeat;
+}
 /*Navigation Menus */
 
 .site-nav ul {

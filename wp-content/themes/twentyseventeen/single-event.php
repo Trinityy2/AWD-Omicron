@@ -6,9 +6,9 @@
 </head>
 <body>
   <header>
-  <?php>
+  <?php
         get_header();
-   <?php>
+   ?>
   </header>
 
   <div class="wrap">

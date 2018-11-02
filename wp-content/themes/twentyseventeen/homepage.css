@@ -1,0 +1,34 @@
+#slider {
+    margin-top:60px;
+}
+#slider .item {
+    height:100%;
+    width:70vw;
+}
+
+#slide1 {
+    background: url("assets/images/movie1.jpg") center no-repeat;
+}
+
+#slide2 {
+    background: url("assets/images/movie2.jpg") center no-repeat;
+}
+
+#slide3 {
+    background: url("assets/images/movie3.jpg") center no-repeat;
+}
+
+.carousel-caption {
+    font-size: 18px;
+    text-align: center;
+}
+
+body {
+    background-color:#ffc95e;
+}
+
+.listevents {
+    font-size:18px;
+    align-content:center;
+    background-color: #5e8eff;
+}

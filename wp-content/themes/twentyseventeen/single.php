@@ -5,9 +5,9 @@
 	</style>
 </head>
 <header>
-  <?php>
+  <?php
         get_header();
-   <?php>
+   ?>
   </header>
 <?php
 function getPrevNext(){
