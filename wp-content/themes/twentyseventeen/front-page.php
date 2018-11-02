@@ -23,7 +23,7 @@
        <li data-slide-to="2" data-target="#slider"></li>
    </ol>
    <div class = "carousel-inner">
-        <div class="item active" id="slide1">
+        <div class="item active" style="background: url("<?php echo get_template_directory_uri() . '/assets/images/movie1.jpg'; ?>") center no-repeat">
         <div class= "carousel caption">
               <h4> The Song Keepers </h4>
           </div>
