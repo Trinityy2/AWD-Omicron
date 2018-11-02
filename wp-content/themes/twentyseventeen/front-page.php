@@ -52,6 +52,7 @@
           </div>
         </div>
         <div class = "btn">
+			<button class="button">View Event</button>
         </div>
    </div>
    <a class="left carousel-control" href="#slider" data-slide="prev" role="button"><span class="icon-prev"></span></a>
