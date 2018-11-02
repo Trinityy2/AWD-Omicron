@@ -38,7 +38,7 @@
                     <a href="#"><li>ABOUT</li></a>
                     <a href="#"><li>PROGRAM</li></a>
                     <a href="#"><li>CINESEEDS</li></a>
-                    <a href="http://localhost:3157/omicron/?p=67"><li>NEWS</li></a>
+                    <a href ="<?php echo" <><li>NEWS</li></a>
                     <a href="#"><li>OUR IMPACT</li></a>
                     <a href="#"><li>GET INVOLVED</li></a>
                     <a href="#"><li>CONTACT US</li></a>
@@ -51,6 +51,7 @@
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
+
 
 	</header><!-- #masthead -->
 

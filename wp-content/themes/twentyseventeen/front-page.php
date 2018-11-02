@@ -38,7 +38,7 @@
    <div class = "carousel-inner">
         <div class="item active" id="slide1">
         <div class= "carousel caption">
-              <h4> The Song Keepers </h4>
+              <h4> Jaha's Promise </h4>
           </div>
         </div>
         <div class="item" id="slide2">
@@ -51,8 +51,7 @@
               <h4> Food Fighters </h4>
           </div>
         </div>
-        <div>
-        <a class="listevents" role="button" href="http://localhost:3157/omicron/?event=you-see-monsters"></a>
+        <div class = "btn">
         </div>
    </div>
    <a class="left carousel-control" href="#slider" data-slide="prev" role="button"><span class="icon-prev"></span></a>
