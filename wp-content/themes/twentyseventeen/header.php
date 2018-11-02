@@ -35,7 +35,21 @@
                     <a href="#"><li>ABOUT</li></a>
                     <a href="#"><li>PROGRAM</li></a>
                     <a href="#"><li>CINESEEDS</li></a>
-                    <a href ="<?php echo" <><li>NEWS</li></a>
+
+										<!-- To get the details of the first news item -->
+										<?php
+						          $news_posts = get_posts([
+						            'post_type' => 'post',
+						            'numberposts' => 1,
+						            'orderby' => 'post_date',
+												'order' => 'DESC',
+												'post_status' => 'publish'
+						          ]);
+
+											$link = get_permalink($news_posts[0]->ID);
+										?>
+
+                    <a href ="<?php echo $link ?>"><li>NEWS</li></a>
                     <a href="#"><li>OUR IMPACT</li></a>
                     <a href="#"><li>GET INVOLVED</li></a>
                     <a href="#"><li>CONTACT US</li></a>
