@@ -61,24 +61,12 @@ html {
 body {
 	margin: 0;
 }
-/*Carousel */
-#slide1 {
-    background: url("assets/images/movie1.jpg") center no-repeat;
-}
-/*Navigation Menus */
-
-.site-nav ul {
-	display:flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-}
 
 .site-nav ul li {
 	list-style: none;
 	float: left;
 	display:block;
-	padding: 10px 18px; 
+	padding: 10px 18px;
 	border: 1px solid #bbbbbb;
 	border-bottom: none;
 	text-decoration: none;

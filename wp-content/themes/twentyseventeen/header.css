@@ -1,0 +1,12 @@
+/*Carousel */
+#slide1 {
+    background: url("assets/images/movie1.jpg") center no-repeat;
+}
+/*Navigation Menus */
+
+.site-nav ul {
+	display:flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}

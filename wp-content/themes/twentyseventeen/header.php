@@ -19,8 +19,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php bloginfo('name'); ?></title>
 <style>
-	<?php include "style.css"; ?>
 	<?php include "allfonts.css"; ?>
+	<?php include "header.css"; ?>
   </style>
 <?php wp_head(); ?>
 </head>

@@ -1,54 +1,48 @@
+<head>
+    <!-- template name:homepage -->
+  <style>
+    <?php include "allfonts.css"; ?>
+    <?php include "homepage.css"; ?>
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<header>
 <?php
-/**
- * The front page template file
- *
- * If the user has selected a static page for their homepage, this is what will
- * appear.
- * Learn more: https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+        get_header();
+   ?>
+</header>
+<body>
+<!--carousel-->
 
-get_header(); ?>
-
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-
-		<?php // Show the selected frontpage content.
-		if ( have_posts() ) :
-			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/page/content', 'front-page' );
-			endwhile;
-		else :
-			get_template_part( 'template-parts/post/content', 'none' );
-		endif; ?>
-
-		<?php
-		// Get each of our panels and show the post data.
-		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
-
-			/**
-			 * Filter number of front page sections in Twenty Seventeen.
-			 *
-			 * @since Twenty Seventeen 1.0
-			 *
-			 * @param int $num_sections Number of front page sections.
-			 */
-			$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
-			global $twentyseventeencounter;
-
-			// Create a setting and control for each of the sections available in the theme.
-			for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-				$twentyseventeencounter = $i;
-				twentyseventeen_front_page_section( null, $i );
-			}
-
-	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
-
-	</main><!-- #main -->
-</div><!-- #primary -->
-
-<?php get_footer();
+<div class = 'carousel' id='slider' data-ride='carousel'>
+   <ol class="carousel-indicators">
+       <li class="active" data-slide-to="0" data-target="#slider"></li>
+       <li data-slide-to="1" data-target="#slider"></li>
+       <li data-slide-to="2" data-target="#slider"></li>
+   </ol>
+   <div class = "carousel-inner">
+        <div class="item active" id="slide1">
+        <div class= "carousel caption">
+              <h4> The Song Keepers </h4>
+          </div>
+        </div>
+        <div class="item" id="slide2">
+        <div class= "carousel caption">
+              <h4> After The Apology </h4>
+          </div>
+        </div>
+        <div class="item" id="slide3">
+        <div class= "carousel caption">
+              <h4> Food Fighters </h4>
+          </div>
+        </div>
+        <div>
+        <a class="listevents" role="button" href="http://localhost:3157/omicron/?event=you-see-monsters"></a>
+        </div>
+   </div>
+   <a class="left carousel-control" href="#slider" data-slide="prev" role="button"><span class="icon-prev"></span></a>
+   <a class="right carousel-control" href="#slider" data-slide="next" role="button"><span class="icon-next"></span></a>
+</div>
+</body>
