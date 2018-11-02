@@ -23,14 +23,12 @@ get_header(); ?>
 				</header><!-- .page-header -->
 				<div class="page-content">
 					<img src="/assets/images/sadpanda.png">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
+					<p><?php _e( 'It seems like nothing was found here. Would you like to try search instead?', 'twentyseventeen' ); ?></p>
 
 					<?php get_search_form(); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
-
-<?php get_footer(); ?>
+                      
+				</div>
+			</section>
+		</main>
+	</div>
+</div>
