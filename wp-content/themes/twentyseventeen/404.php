@@ -16,11 +16,13 @@
 					</h1>
 				</header><!-- .page-header -->
 				<div class="page-content">
+
 					<a href = "<?php echo get_home_url('/'); ?>">
 						<img class = "panda" src="<?php echo get_template_directory_uri() . '/assets/images/sadpanda.png'; ?>">
 					</a>
 					<h1><?php _e( 'Looks like you and this panda got lost. Let\'s take this panda back home...'); ?></h1>
 				</div>
+				<div></div>
 			</section>
 
 </div>
