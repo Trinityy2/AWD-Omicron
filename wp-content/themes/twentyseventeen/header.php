@@ -27,17 +27,29 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
-
 	<header id="masthead" class="site-header" role="banner">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h5><?php bloginfo('description'); ?></h5>
+		<img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/hraff-logo.png'; ?>" alt="HRAFF Logo" width="80" height="80">
 		<nav class="site-nav">
                     <ul id = "menu">
                     <a href="#"><li>ABOUT</li></a>
                     <a href="#"><li>PROGRAM</li></a>
                     <a href="#"><li>CINESEEDS</li></a>
-                    <a href ="#" <><li>NEWS</li></a>
+
+										<!-- To get the details of the first news item -->
+										<?php
+						          $news_posts = get_posts([
+						            'post_type' => 'post',
+						            'numberposts' => 1,
+						            'orderby' => 'post_date',
+												'order' => 'DESC',
+												'post_status' => 'publish'
+						          ]);
+
+											$link = get_permalink($news_posts[0]->ID);
+										?>
+
+                    <a href ="<?php echo $link ?>"><li>NEWS</li></a>
                     <a href="#"><li>OUR IMPACT</li></a>
                     <a href="#"><li>GET INVOLVED</li></a>
                     <a href="#"><li>CONTACT US</li></a>
